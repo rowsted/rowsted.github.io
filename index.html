@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ROWSTED Coffee</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f0e5;
+      color: #2e2e2e;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: url('images/coffee-beans.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo {
+      width: 300px;
+      max-width: 90vw;
+      border-radius: 50%;
+      z-index: 1;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .headline {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      z-index: 2;
+      position: relative;
+      color: #fff;
+    }
+    main {
+      padding: 4rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 5rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+    }
+    section:nth-child(1) { animation-delay: 0.5s; }
+    section:nth-child(2) { animation-delay: 1s; }
+    section:nth-child(3) { animation-delay: 1.5s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      border-bottom: 2px solid #6f4e37;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 1.5rem;
+    }
+    a {
+      color: #6f4e37;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .ethiopia-map {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 1rem;
+    }
+    @media (max-width: 600px) {
+      .logo {
+        width: 200px;
+      }
+      .headline {
+        font-size: 1.8rem;
+      }
+      main {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Rowsted Coffee Logo" class="logo"/>
+    <div class="headline">Don't Drink Bad Coffee...<br>Get ROWSTED!!!</div>
+  </header>
+
+  <main>
+    <section id="offerings">
+      <h2>Current Offerings</h2>
+      <div class="bean">
+        <h3>Ethiopia - Natural Sidama - Bombe</h3>
+        <ul>
+          <li><strong>Origin:</strong> Ethiopia</li>
+          <li><strong>Region:</strong> Sidama (Bombe)</li>
+          <li><strong>Process:</strong> Natural</li>
+          <li><strong>Roast Options:</strong> Cinnamon, Light, City, Full City, Full City+, Vienna, French, Italian</li>
+        </ul>
+        <p>Tasting Notes: Blueberry, chocolate, citrus.</p>
+        <p><strong>Price:</strong> $15 per 8oz bag<br>
+        <strong>Shipping:</strong> Free for 3+ bags, otherwise flat $7</p>
+        <img src="images/ethiopia-map.jpg" alt="Map of Ethiopia with Sidama highlighted" class="ethiopia-map" style="max-width: 25%;"/>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>ROWSTED started as a passion project — not in a boardroom or business plan, but in my garage, right after a trip to Europe where I had my first truly unforgettable espresso. I came home obsessed, bought my first setup, and started pulling shots until 2 a.m. every night. It wasn’t long before I wanted to take control of the bean itself.</p>
+      <p>I chose the name "ROWSTED" as a fun, phonetic spin on "roasted," inspired by brands like Lyft that took something familiar and made it their own. My first proud moment came when my wife said my roast beat out her favorite from Stumptown — that’s when I knew I had something worth sharing.</p>
+      <p>Now I roast every batch on an Aillio R2 Bullet, one of the most capable small-batch machines around. I’m still learning, still improving, and still chasing that perfect roast. I lean toward espresso profiles, but offer everything from cinnamon to Italian depending on what the bean needs.</p>
+      <p>My goal is simple: to help you rediscover what fresh, specialty-grade coffee is meant to be. I roast in drops but can schedule your roast in advance if you need it sooner. When you open a bag, I want you to inhale deeply, savor the aroma, brew your perfect cup — and come back for more.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Got questions or want to order a bag? Reach out anytime via <a href="mailto:crfast@gmail.com">email</a> or find me on Instagram @rowstedcoffee. Payments accepted via Venmo.</p>
+    </section>
+  </main>
+</body>
+</html>
