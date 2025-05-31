@@ -17,7 +17,7 @@
       color: #f4f0e5;
     }
     header {
-      background: url('images/coffee-beans.jpg') center center / cover no-repeat;
+      background: url('images/coffee-beans.jpg') center top / cover no-repeat;
       text-align: center;
       padding: 6rem 1rem;
       position: relative;
@@ -42,7 +42,7 @@
       font-weight: 900;
       letter-spacing: 2px;
       color: #fff;
-      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9);
+      text-shadow: 3px 3px 15px rgba(0, 0, 0, 1);
       z-index: 2;
       position: relative;
       animation: zoomFadeIn 2s ease;
@@ -127,6 +127,10 @@
       .logo { width: 180px; }
       .headline { font-size: 2rem; padding: 0 1rem; }
       main { padding: 2rem 1rem; }
+      header {
+        background-size: contain;
+        background-position: center top;
+      }
     }
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(30px); }
